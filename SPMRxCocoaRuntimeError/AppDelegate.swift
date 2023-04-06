@@ -5,6 +5,7 @@
 //  Created by 김호세 on 2023/04/05.
 //
 
+import RxCocoa
 import RxSwift
 import UIKit
 
@@ -20,6 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       print($0)
     })
     .dispose()
+
+    BehaviorRelay(value: 2)
+      .subscribe(onNext: {
+        print($0)
+    })
+      .dispose()
 
     return true
   }
