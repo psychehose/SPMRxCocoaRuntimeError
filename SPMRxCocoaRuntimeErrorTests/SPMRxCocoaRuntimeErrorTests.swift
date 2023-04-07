@@ -7,6 +7,8 @@
 
 import XCTest
 import RxCocoa
+import RxSwift
+import RxTest
 
 
 @testable import SPMRxCocoaRuntimeError
@@ -27,4 +29,29 @@ final class SPMRxCocoaRuntimeErrorTests: XCTestCase {
     .dispose()
   }
 
+  func testScedule() {
+    let scheduler = TestScheduler(initialClock: 0)
+
+
+    let disposeBag = DisposeBag()
+    let observer = scheduler.createObserver(Int.self)
+
+    scheduler
+      .createColdObservable([
+        .next(100, 1),
+        .next(200, 2)
+      ])
+      .subscribe(observer)
+      .disposed(by: disposeBag)
+
+
+    scheduler.start()
+
+    XCTAssertEqual(observer.events, [
+      .next(100, 1),
+      .next(200, 2)
+    ])
+  }
+
 }
+

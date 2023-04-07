@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		777C5DB629E0475C00BEDABE /* ThirdPartyManager in Frameworks */ = {isa = PBXBuildFile; productRef = 777C5DB529E0475C00BEDABE /* ThirdPartyManager */; };
+		777C5DB729E0475C00BEDABE /* ThirdPartyManager in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 777C5DB529E0475C00BEDABE /* ThirdPartyManager */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		777C5DB929E047A900BEDABE /* TestResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 777C5DB829E047A900BEDABE /* TestResolver */; };
+		777C5DBE29E04C3200BEDABE /* ThirdPartyManager in Frameworks */ = {isa = PBXBuildFile; productRef = 777C5DBD29E04C3200BEDABE /* ThirdPartyManager */; };
+		777C5DBF29E04C3200BEDABE /* ThirdPartyManager in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 777C5DBD29E04C3200BEDABE /* ThirdPartyManager */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		77BF34D229DD6CD700DF545D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF34D129DD6CD700DF545D /* AppDelegate.swift */; };
 		77BF34D429DD6CD700DF545D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF34D329DD6CD700DF545D /* SceneDelegate.swift */; };
 		77BF34D629DD6CD700DF545D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF34D529DD6CD700DF545D /* ViewController.swift */; };
@@ -41,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				777C5DB729E0475C00BEDABE /* ThirdPartyManager in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				777C5DBF29E04C3200BEDABE /* ThirdPartyManager in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		777C5DB429E0458600BEDABE /* ThirdPartyManager */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ThirdPartyManager; sourceTree = "<group>"; };
 		77BF34CE29DD6CD700DF545D /* SPMRxCocoaRuntimeError.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMRxCocoaRuntimeError.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BF34D129DD6CD700DF545D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77BF34D329DD6CD700DF545D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777C5DB629E0475C00BEDABE /* ThirdPartyManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777C5DB929E047A900BEDABE /* TestResolver in Frameworks */,
+				777C5DBE29E04C3200BEDABE /* ThirdPartyManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +118,7 @@
 		77BF34C529DD6CD700DF545D = {
 			isa = PBXGroup;
 			children = (
+				777C5DB429E0458600BEDABE /* ThirdPartyManager */,
 				77BF34D029DD6CD700DF545D /* SPMRxCocoaRuntimeError */,
 				77BF34E729DD6CD800DF545D /* SPMRxCocoaRuntimeErrorTests */,
 				77BF34F129DD6CD800DF545D /* SPMRxCocoaRuntimeErrorUITests */,
@@ -173,6 +185,7 @@
 			);
 			name = SPMRxCocoaRuntimeError;
 			packageProductDependencies = (
+				777C5DB529E0475C00BEDABE /* ThirdPartyManager */,
 			);
 			productName = SPMRxCocoaRuntimeError;
 			productReference = 77BF34CE29DD6CD700DF545D /* SPMRxCocoaRuntimeError.app */;
@@ -194,6 +207,8 @@
 			);
 			name = SPMRxCocoaRuntimeErrorTests;
 			packageProductDependencies = (
+				777C5DB829E047A900BEDABE /* TestResolver */,
+				777C5DBD29E04C3200BEDABE /* ThirdPartyManager */,
 			);
 			productName = SPMRxCocoaRuntimeErrorTests;
 			productReference = 77BF34E429DD6CD800DF545D /* SPMRxCocoaRuntimeErrorTests.xctest */;
@@ -630,6 +645,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		777C5DB529E0475C00BEDABE /* ThirdPartyManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ThirdPartyManager;
+		};
+		777C5DB829E047A900BEDABE /* TestResolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TestResolver;
+		};
+		777C5DBD29E04C3200BEDABE /* ThirdPartyManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ThirdPartyManager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 77BF34C629DD6CD700DF545D /* Project object */;
 }
