@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		779F7B0A29DEA843000B77A3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 779F7B0929DEA843000B77A3 /* RxCocoa */; };
-		779F7B0C29DEA843000B77A3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 779F7B0B29DEA843000B77A3 /* RxRelay */; };
-		779F7B0E29DEA843000B77A3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 779F7B0D29DEA843000B77A3 /* RxSwift */; };
+		77276C3329DF3BF000CFE0EA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 77276C3229DF3BF000CFE0EA /* RxRelay */; };
+		77276C3529DF3BF000CFE0EA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 77276C3429DF3BF000CFE0EA /* RxSwift */; };
 		77BF34D229DD6CD700DF545D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF34D129DD6CD700DF545D /* AppDelegate.swift */; };
 		77BF34D429DD6CD700DF545D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF34D329DD6CD700DF545D /* SceneDelegate.swift */; };
 		77BF34D629DD6CD700DF545D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF34D529DD6CD700DF545D /* ViewController.swift */; };
@@ -18,6 +17,12 @@
 		77BF34E929DD6CD800DF545D /* SPMRxCocoaRuntimeErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF34E829DD6CD800DF545D /* SPMRxCocoaRuntimeErrorTests.swift */; };
 		77BF34F329DD6CD800DF545D /* SPMRxCocoaRuntimeErrorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF34F229DD6CD800DF545D /* SPMRxCocoaRuntimeErrorUITests.swift */; };
 		77BF34F529DD6CD800DF545D /* SPMRxCocoaRuntimeErrorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF34F429DD6CD800DF545D /* SPMRxCocoaRuntimeErrorUITestsLaunchTests.swift */; };
+		77FB6F5329E03CE900A24AB7 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 77FB6F5229E03CE900A24AB7 /* RxBlocking */; };
+		77FB6F5529E03CE900A24AB7 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 77FB6F5429E03CE900A24AB7 /* RxTest */; };
+		77FB6F5929E03EB700A24AB7 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 77FB6F5829E03EB700A24AB7 /* RxCocoa-Dynamic */; };
+		77FB6F5A29E03EB700A24AB7 /* RxCocoa-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 77FB6F5829E03EB700A24AB7 /* RxCocoa-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		77FB6F5C29E03ED000A24AB7 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 77FB6F5B29E03ED000A24AB7 /* RxCocoa-Dynamic */; };
+		77FB6F5D29E03ED000A24AB7 /* RxCocoa-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 77FB6F5B29E03ED000A24AB7 /* RxCocoa-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,31 @@
 			remoteInfo = SPMRxCocoaRuntimeError;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		775C831C29DF44F500895FDC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				77FB6F5A29E03EB700A24AB7 /* RxCocoa-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779F7B1A29DEB6EF000B77A3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				77FB6F5D29E03ED000A24AB7 /* RxCocoa-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		77BF34CE29DD6CD700DF545D /* SPMRxCocoaRuntimeError.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMRxCocoaRuntimeError.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,9 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				779F7B0C29DEA843000B77A3 /* RxRelay in Frameworks */,
-				779F7B0A29DEA843000B77A3 /* RxCocoa in Frameworks */,
-				779F7B0E29DEA843000B77A3 /* RxSwift in Frameworks */,
+				77276C3529DF3BF000CFE0EA /* RxSwift in Frameworks */,
+				77FB6F5929E03EB700A24AB7 /* RxCocoa-Dynamic in Frameworks */,
+				77276C3329DF3BF000CFE0EA /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FB6F5529E03CE900A24AB7 /* RxTest in Frameworks */,
+				77FB6F5C29E03ED000A24AB7 /* RxCocoa-Dynamic in Frameworks */,
+				77FB6F5329E03CE900A24AB7 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +181,7 @@
 				77BF34CA29DD6CD700DF545D /* Sources */,
 				77BF34CB29DD6CD700DF545D /* Frameworks */,
 				77BF34CC29DD6CD700DF545D /* Resources */,
+				775C831C29DF44F500895FDC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,9 +189,9 @@
 			);
 			name = SPMRxCocoaRuntimeError;
 			packageProductDependencies = (
-				779F7B0929DEA843000B77A3 /* RxCocoa */,
-				779F7B0B29DEA843000B77A3 /* RxRelay */,
-				779F7B0D29DEA843000B77A3 /* RxSwift */,
+				77276C3229DF3BF000CFE0EA /* RxRelay */,
+				77276C3429DF3BF000CFE0EA /* RxSwift */,
+				77FB6F5829E03EB700A24AB7 /* RxCocoa-Dynamic */,
 			);
 			productName = SPMRxCocoaRuntimeError;
 			productReference = 77BF34CE29DD6CD700DF545D /* SPMRxCocoaRuntimeError.app */;
@@ -170,6 +204,7 @@
 				77BF34E029DD6CD800DF545D /* Sources */,
 				77BF34E129DD6CD800DF545D /* Frameworks */,
 				77BF34E229DD6CD800DF545D /* Resources */,
+				779F7B1A29DEB6EF000B77A3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +213,9 @@
 			);
 			name = SPMRxCocoaRuntimeErrorTests;
 			packageProductDependencies = (
+				77FB6F5229E03CE900A24AB7 /* RxBlocking */,
+				77FB6F5429E03CE900A24AB7 /* RxTest */,
+				77FB6F5B29E03ED000A24AB7 /* RxCocoa-Dynamic */,
 			);
 			productName = SPMRxCocoaRuntimeErrorTests;
 			productReference = 77BF34E429DD6CD800DF545D /* SPMRxCocoaRuntimeErrorTests.xctest */;
@@ -234,7 +272,7 @@
 			);
 			mainGroup = 77BF34C529DD6CD700DF545D;
 			packageReferences = (
-				779F7B0629DEA843000B77A3 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				77276C2F29DF3BF000CFE0EA /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 77BF34CF29DD6CD700DF545D /* Products */;
 			projectDirPath = "";
@@ -382,6 +420,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -435,6 +474,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -507,6 +547,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.hose.SPMRxCocoaRuntimeErrorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -614,7 +655,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		779F7B0629DEA843000B77A3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		77276C2F29DF3BF000CFE0EA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -625,20 +666,35 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		779F7B0929DEA843000B77A3 /* RxCocoa */ = {
+		77276C3229DF3BF000CFE0EA /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 779F7B0629DEA843000B77A3 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		779F7B0B29DEA843000B77A3 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 779F7B0629DEA843000B77A3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 77276C2F29DF3BF000CFE0EA /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
 		};
-		779F7B0D29DEA843000B77A3 /* RxSwift */ = {
+		77276C3429DF3BF000CFE0EA /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 779F7B0629DEA843000B77A3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 77276C2F29DF3BF000CFE0EA /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		77FB6F5229E03CE900A24AB7 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77276C2F29DF3BF000CFE0EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		77FB6F5429E03CE900A24AB7 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77276C2F29DF3BF000CFE0EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		77FB6F5829E03EB700A24AB7 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77276C2F29DF3BF000CFE0EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		77FB6F5B29E03ED000A24AB7 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77276C2F29DF3BF000CFE0EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
